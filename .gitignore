@@ -1,7 +1,7 @@
 # Cursor IDE関連
 .cursor/
 ~/.cursor/
-.cursorrules
+# 注意: プロジェクトの .cursorrules はチーム共有のため Git 管理に含める
 
 # macOS
 .DS_Store
