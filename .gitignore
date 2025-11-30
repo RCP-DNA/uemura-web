@@ -1,0 +1,22 @@
+# Cursor IDE関連
+.cursor/
+~/.cursor/
+.cursorrules
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# エディタ関連
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# 一時ファイル
+*.tmp
+*.bak
+*.log
+
