@@ -10,6 +10,8 @@
 
 # エディタ関連
 .vscode/
+.claude/
+.kiro/
 .idea/
 *.swp
 *.swo
