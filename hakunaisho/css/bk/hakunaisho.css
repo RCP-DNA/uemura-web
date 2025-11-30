@@ -1,0 +1,452 @@
+@charset "UTF-8";
+
+/*=============================================================
+Initialize
+=============================================================*/
+*{
+margin:0;
+padding:0;
+}
+
+body{
+text-align:center;
+font-family:"Hiragino Kaku Gothic Pro","ヒラギノ角ゴ Pro W3","ＭＳ Ｐゴシック",Osaka,sans-serif;
+-webkit-text-size-adjust:none;
+-webkit-font-smoothing:antialiased;
+font:13px;
+*font-size:small;
+*font:x-small;
+}
+
+
+/*=============================================================
+Common Status
+=============================================================*/
+
+
+a{
+text-decoration:underline;
+color:midnightblue;
+}
+
+a:hover{
+color:orange;
+}
+
+
+/*--------------------------------------------------------------------------------
+#header
+--------------------------------------------------------------------------------*/
+#header{
+width:auto;
+height:140px;
+}
+
+#header_upper{
+width:auto;
+height:20px;
+
+color:white;
+background-color:midnightblue;
+}
+
+#header_lower{
+width:980px;
+margin:0 auto;
+background-color:white;
+}
+
+#header_leftbox {
+float:left;
+height:63px;
+width:320px;
+}
+
+#logo{
+width:320px;
+height:60px;
+margin-top:20px;
+}
+
+#header_rightbox {
+float:right;
+width:600px;
+padding:26px 0 0 38px;
+/*border:black solid thin;*/
+}
+
+#to_main_home{
+padding-bottom:10px;
+text-align:right;
+font-weight:bold;
+}
+
+#callnum {
+font-size:24px;
+color:gray;
+}
+
+
+
+#header_items{
+width:490px;
+padding:10px 0 0 270px;
+/*position:absolute;
+top:120px;
+right:400px;*/
+}
+
+
+#header_items li {
+margin-right:22px;
+color:gray;
+font-size:large;
+float:left;
+}
+
+.staff {
+font-size:18px;
+color:white;
+background-color:midnightblue;
+}
+
+
+/*--------------------------------------------------------------------------------
+#navi
+--------------------------------------------------------------------------------*/
+#navi{
+border:black solid 1px;
+width:auto;
+height:55px;
+color:white;
+background-color:midnightblue;
+text-align:center;
+}
+
+
+#navi ul{
+width:900px;
+margin:0 auto;
+
+}
+
+#navi li{
+/*width:223px;*/
+height:23px;
+margin:0;
+padding-top:27px;
+text-align:center;
+float:left;
+}
+
+#navi li a{
+text-decoration:none;
+}
+
+#navi li.spacer{
+width:1px;
+margin:2px 0;
+background:navajowhite;
+text-indent:100%;
+white-space:nowrap;
+overflow:hidden;
+}
+
+.naviitems {
+font-size:22px;
+color:white;
+}
+
+#navi li:hover{
+border-bottom:2px solid gold;
+}
+
+#navi li.active{
+border-bottom:2px solid gold;
+}
+
+
+/*--------------------------------------------------------------------------------
+#content_unit
+--------------------------------------------------------------------------------*/
+
+.content_title {
+clear:both;
+width:100%;
+margin:0 auto;
+border-style:solid;
+border-width:medium;
+border-color: darkorange white midnightblue;
+font-size:32px;
+font-style:bold;
+}
+
+.unit_menu {
+width:980px;
+margin:0 auto;
+font-size:24px;
+font-style:bold;
+color:darkslategray;
+background-color:aliceblue;
+text-align:left;
+}
+
+.unit_innerbox {
+width:100%;
+border-style:solid;
+line-height:1.2;
+border-width:thin;
+border-color:white;
+}
+
+.unit_innerbox dl {
+margin:25px 0 25px 60px;
+}
+
+
+.unit_innerbox dt {
+float:left;
+clear:left;
+margin-bottom:11px;
+}
+
+.unit_innerbox dd {
+margin-left:40px;
+margin-bottom:10px;
+}
+
+
+.unit_content {
+width:800px;
+margin:0 auto;
+font-size:24px;
+line-height:1.5;
+color:darkslategray;
+text-align:left;
+padding:15px 0 30px;
+}
+
+#signiture {
+text-align:right;
+}
+
+
+.greeting li{
+float:left;
+}
+
+
+#symptom_table td {
+width:300px;
+height:50px;
+
+background-color:mistyrose;
+}
+
+#symptom_table td a {
+}
+
+.op_feature {
+font-size:20px;
+margin-bottom:50px;}
+
+.op_feature dt {
+float:left;
+clear:both;
+width:260px;
+margin-bottom:10px;
+padding-left:10px;
+text-align:center;
+color:white;
+background-color:dodgerblue;
+}
+.op_feature dd {
+margin-left:280px;
+padding-left:8px;
+margin-bottom:20px;
+background-color:lightcyan;
+}
+
+
+.stack{
+clear:both;
+width:100%;
+margin:0,auto;
+font-size:20px;
+}
+
+.col_l{
+width:210px;
+color:white;
+text-align:center;
+background-color:dodgerblue;
+}
+.col_r{
+width:590px;
+background-color:lightcyan;
+}
+
+.bullet dt {
+float:left;
+clear:both;
+width:30px;
+text-align:right;
+color:coral;
+background-color:lightcyan;
+}
+.bullet dd {
+margin-left:30px;
+padding-left:8px;
+}
+
+.arrow_rect{
+background-color:lavender;
+}
+
+.op_observe {
+margin-top:50px;
+font-size:18px;
+}
+
+.op_observe dt{
+float:left;
+width:90px;
+}
+
+.op_observe dd{
+margin-left:90px;
+}
+
+
+
+/*--------------------------------------------------------------------------------
+#below
+--------------------------------------------------------------------------------*/
+.below {background-color:midnightblue;}
+
+
+.below a{
+text-decoration:none;
+color:#ffeeee;
+}
+
+.below a:hover{
+text-decoration:underline;
+color:indigo;
+}
+
+
+.below_cont_title_back {
+width:100%;
+background-color:lavender;
+}
+
+.below_cont_title {
+width:800px;
+margin:0 auto;
+font-size:32px;
+line-height:2;
+font-weight:bold;
+color:dimgray;
+text-align:left;
+}
+
+.below_content {
+width:800px;
+margin:0 auto;
+font-size:24px;
+line-height:1.5;
+color:white;
+background-color:midnightblue;
+text-align:left;
+padding:15px 0 30px;
+}
+
+
+
+
+table#timetable {
+border:solid 3px #ffeeee;
+border-collapse:collapse;
+text-align:center;
+}
+
+#timetable thead th {
+border:solid 2px #ffeeee;
+}
+
+#timetable tbody {
+font-weight:bold;
+}
+
+#timetable tbody tr th {
+border:solid 2px #ffeeee;
+width:315px;
+}
+
+#timetable tbody tr td {
+border:solid 2px #ffeeee;
+width:50px;
+
+}
+
+#timetable_lastcell {
+width:90px;
+}
+
+#pict_director {
+float:left;
+clear:left;
+margin:0 40px 30px 0;
+}
+
+
+#profile {
+clear:left;
+}
+
+#profile dl {
+font-size:20px;
+margin:25px 0 25px 0px;
+}
+
+#profile dt {
+float:left;
+clear:left;
+margin-bottom:10px;
+}
+
+#profile dd {
+margin-left:160px;
+margin-bottom:10px;
+}
+
+#recruit_box {
+font-size:16px;
+}
+
+#recruit_job dl {
+font-size:16px;
+margin:25px 0 25px 0px;
+}
+
+#recruit_job dt {
+margin-bottom:10px;
+}
+
+#recruit_job dd {
+margin:5px 0 15px 120px;
+}
+
+#recruit_shift dl{
+font-size:16px;
+}
+
+#recruit_shift dt {
+float:left;
+clear:left;
+}
+
+#recruit_shift dd {
+margin-left:120px;
+}

@@ -1,0 +1,17 @@
+# Cursor Rules for Uemura Web Project
+
+## プロジェクト概要
+綾瀬うえむら眼科のWebサイトプロジェクトです。
+静的なHTML/CSS/JavaScriptで構成されています。
+
+## プロジェクト構造
+- `index.html` - メインページ
+- `common/` - 共通リソース（CSS、画像）
+- `equipment/` - 設備紹介ページ
+- `hakunaisho/` - 白内障関連ページ
+- `oltho/` - オルソケラトロジー関連ページ
+- `js/slick/` - Slickスライダーライブラリ
+
+## 注意事項
+- 共通設定ファイルの自動検出とByteRover連携は、グローバルルール（`~/.cursor/rules/`）で管理されています
+

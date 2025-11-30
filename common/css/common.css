@@ -1,0 +1,96 @@
+@charset "UTF-8";
+
+/*=============================================================
+Initialize
+=============================================================*/
+*{
+margin:0;
+padding:0;
+border:0;
+}
+
+body{
+font-family:"Hiragino Kaku Gothic Pro","ヒラギノ角ゴ Pro W3","ＭＳ Ｐゴシック",Osaka,sans-serif;
+-webkit-text-size-adjust:none;
+-webkit-font-smoothing:antialiased;
+/*font:13px;*/
+*font-size:small;
+*font:x-small;
+font-size:100%;
+line-height:1.2em;
+}
+
+/*=============================================================
+Common
+=============================================================*/
+a{
+text-decoration:none;
+color:#272828;
+}
+
+a:hover{
+color:#0373a5;
+}
+
+img{
+vertical-align:top;
+border:0;
+}
+
+li{
+list-style:none;
+}
+
+h2{font-size:xx-large;}
+h3{font-size:x-large;}
+h4{font-size:x-large;font-weight:normal;}
+
+.icon{
+margin-right:5px;
+}
+
+.btm_margin{
+margin-bottom:50px;
+}
+
+.left_col{
+float:left;
+}
+
+.right_col{
+float:right;
+}
+
+.al_center {text-align:center;}
+.al_left {text-align:left;}
+.al_right {text-align:right;}
+.mar_center {margin:0 auto;}
+.height_1 {height:1px;}
+.height_2 {height:2px;}
+.height_10 {height:10px;}
+.pad_10 {padding:10px 0;}
+.pad_15 {padding:15px 0;}
+.mar-t_15 {margin-top:50px;}
+.mar_t20 {margin-top:20px;}
+.mar_btm20 {margin-bottom:20px;}
+.mar_btm30 {margin-bottom:30px;}
+.mar_btm40 {margin-bottom:40px;}
+
+.clearfix:after {
+	content:".";
+	display:block;
+	height:0;
+	clear:both;
+	visibility:hidden;
+}
+
+.clearfix { display: inline-block; }
+
+.page_up {
+clear:both;
+text-align:right;
+font-size:medium;
+font-weight:bold;
+padding-top:20px;
+margin-bottom:40px;
+}

@@ -1,0 +1,570 @@
+@charset "UTF-8";
+
+/*=============================================================
+Initialize
+=============================================================*/
+*{
+margin:0;
+padding:0;
+}
+
+body{
+	max-width:1080px;
+	width:100%;
+	text-align:center;
+	margin:0 auto;
+font-family:"Hiragino Kaku Gothic Pro","ヒラギノ角ゴ Pro W3","ＭＳ Ｐゴシック",Osaka,sans-serif;
+-webkit-text-size-adjust:none;
+-webkit-font-smoothing:antialiased;
+font:13px;
+*font-size:small;
+*font:x-small;
+}
+
+
+/*=============================================================
+Common Status
+=============================================================*/
+
+
+a{
+text-decoration:underline;
+color:midnightblue;
+}
+
+a:hover {
+color:orange;
+}
+
+/*--------------------------------------------------------------------------------
+#header
+--------------------------------------------------------------------------------*/
+#header{
+	width:100%;
+//max-width:1080px;
+margin:0 auto;
+height:115px;
+}
+
+#header_upper{
+	width:100%;
+//max-width:1080px;
+height:20px;
+
+color:white;
+background-color:darkorange;
+}
+
+#header_lower{
+	width:100%;
+//max-width:1080px;
+margin:0 auto;
+background-color:white;
+}
+
+
+#header_leftbox {
+float:left;
+width:380px;
+margin-left:20px;
+/*
+border:black solid thin;*/
+}
+
+#header_rightbox {
+float:right;
+width:500px;
+padding:10px 0 0 0px;
+/*
+border:black solid thin;*/
+}
+
+.to_main_home{
+padding-bottom:5px;
+padding-right:15px;
+text-align:right;
+font-weight:bold;
+}
+
+#callnum {
+font-size:24px;
+color:#333;
+margin-top:5px;
+margin-left:130px;
+}
+
+#logo{
+width:320px;
+height:89px;
+margin-top:5px;
+}
+
+#header_items{
+width:490px;
+padding:10px 0 0 230px;
+border:solid 1px black;
+}
+
+#header_items li {
+margin-right:22px;
+color:gray;
+font-size:large;
+float:left;
+}
+
+.staff {
+font-size:18px;
+color:white;
+background-color:darkorange;
+}
+
+
+/*--------------------------------------------------------------------------------
+#navi
+--------------------------------------------------------------------------------*/
+#navi{
+	width:100%;
+//max-width:1080px;
+height:55px;
+margin:0 auto;
+color:white;
+background-color:darkorange;
+}
+
+
+#navi ul{
+width:913px;
+margin:0 auto;
+}
+
+#navi li{
+height:23px;
+margin:0 2px;
+padding-top:27px;
+text-align:center;
+float:left;
+}
+
+#navi li a{
+text-decoration:none;
+}
+
+#navi li.spacer{
+width:1px;
+margin:2px 0;
+background:navajowhite;
+text-indent:100%;
+white-space:nowrap;
+overflow:hidden;
+}
+
+.naviitems {
+font-size:22px;
+color:white;
+}
+
+#navi li:hover{
+border-bottom:2px solid gold;
+}
+
+#navi li.active{
+border-bottom:2px solid gold;
+}
+
+/*--------------------------------------------------------------------------------
+#slider
+--------------------------------------------------------------------------------*/
+
+ul#uemura_slide {
+	width:100%;
+	//max-width:1080px;
+
+	margin:0 auto;
+	position: relative;
+	z-index:10;
+}
+
+
+
+/*--------------------------------------------------------------------------------
+#tab
+--------------------------------------------------------------------------------*/
+#tab {
+	text-align:center;
+font-size:150%;
+}
+
+#tab ul {
+	width:100%;
+//max-width:1080px;
+margin:0 auto;
+text-align:left;
+}
+
+#tab li {
+float:left;
+display:block;
+width:359px;
+height:30px;
+margin-top:0px;
+padding-top:10px;
+text-align:center;
+background-color:rgba(255, 185, 105, 0.75);
+}
+
+#tab_1 li:hover {background-color:darkorange;color:white;}
+#tab_2 li:hover {background-color:indigo;color:white;}
+#tab_3 li:hover {background-color:green;color:white;}
+
+
+/*--------------------------------------------------------------------------------
+#today グリッド
+--------------------------------------------------------------------------------*/
+
+#today {
+	clear:left;
+	width:96%;
+	padding:1rem 2%;
+	display:grid;
+	grid-template-columns: auto auto auto;
+	//grid-template-rows: 100px 100px;
+	grid-column-gap: 0.5rem;
+	grid-row-gap: 0.5rem;
+	background-color:aliceblue;
+}
+
+#item1 {
+	grid-column: 1 / 2;
+	grid-row: 1 / 2;
+	border:solid 0px black;
+}
+
+#item1 {width:168px;}
+
+#item1 p {
+	margin:0.7rem 0;
+	font-size:1.2rem;
+	color:purple;
+	font-weight:bold;
+}
+
+#bees {
+}
+
+#item2 {
+	grid-column: 2 / 3;
+	grid-row: 1 / 2;
+}
+#item3 {
+	grid-column: 3 / 4;
+	grid-row: 1 / 2;
+}
+
+#item,#item2,#item3,#today img {
+	margin:0;
+	border:solid 0px red;
+}
+
+
+/*--------------------------------------------------------------------------------
+#content_unit
+--------------------------------------------------------------------------------*/
+
+#body_content {
+	clear:left;
+}
+
+.content_wrap {
+	clear:both;
+	margin:0 auto;
+	text-align:center;
+	}
+
+.content_title {
+		width:100%;
+//max-width:1080px;
+	margin:0 auto;
+	border-style:solid;
+	border-width:medium;
+	border-color: darkviolet white darkorange;
+	font-size:32px;
+	font-style:bold;
+}
+
+.unit_menu {
+	width:100%;
+//max-width:1080px;
+margin:0 auto;
+font-size:24px;
+font-style:bold;
+color:darkslategray;
+background-color:aliceblue;
+text-align:left;
+}
+
+.unit_innerbox {
+clear:both;
+	width:100%;
+//max-width:1080px;
+margin:0 auto;
+line-height:1.5em;
+border:solid 3px white;
+}
+
+
+/*
+#slideR {
+  z-index: 99;
+  cursor: pointer;
+  position: relative;
+  top: 0;
+  right: -140px;
+  //background: darkorange;
+  width: 380px;
+  color: #fff;
+  font-size: 16px;
+}
+#slideR .slide-inner {
+  overflow: auto;
+  overflow-x: hidden;
+  background: darkorange;
+}
+*/
+
+
+.unit_innerbox dl {
+margin:25px;
+}
+
+
+.unit_innerbox dt {/*おしらせのアイコンイラスト*/
+float:left;
+width:50px;
+	padding-left:10px;
+}
+
+.unit_innerbox dd {/*おしらせの文章*/
+margin-left:60px;
+margin-bottom:1.5em;
+}
+
+.unit_innerbox dt {/*おしらせのアイコンイラスト*/
+float:left;
+width:50px;
+	padding-left:10px;
+}
+
+.unit_innerbox dd {/*おしらせの文章*/
+margin-left:60px;
+margin-bottom:1.5em;
+}
+
+.unit_innerbox .adachi dt {/*足立区の検診についてdt*/
+float:left;
+	min-width:12rem;
+	width:20%
+		padding-left:1rem;
+	text-align:right;
+	color:darkorange;
+	//border:solid 1px blue;
+}
+
+.unit_innerbox .adachi dd {/*足立区の検診についてdd*/
+	//float:right;
+	width:80%;
+margin-left:13rem;
+	margin-bottom:1.5em;
+	//border:solid 1px black;
+}
+
+.unit_content {
+width:800px;
+margin:0 auto;
+font-size:24px;
+line-height:1.5;
+color:darkslategray;
+text-align:left;
+padding:15px 0 30px;
+}
+
+#signiture {
+text-align:right;
+}
+
+#greeting_photo li {
+float:left;
+}
+
+#symptom_table td {
+width:300px;
+height:50px;
+
+background-color:mistyrose;
+}
+
+#symptom_table td a {
+}
+
+.symptom {
+font-size:20px;
+margin-bottom:50px;}
+
+.symptom dt {
+float:left;
+clear:both;
+width:260px;
+margin-bottom:10px;
+padding-left:10px;
+background-color:aliceblue;
+}
+.symptom dd {
+margin-left:280px;
+padding-left:8px;
+margin-bottom:20px;
+background-color:lightyellow;
+}
+
+
+
+
+/*--------------------------------------------------------------------------------
+#below
+--------------------------------------------------------------------------------*/
+.below {
+	width:100%;
+	//max-width:1080px;
+	margin:0 auto;
+background-color:darkorange;
+}
+
+
+.below a{
+text-decoration:none;
+color:#ffeeee;
+}
+
+.below a:hover{
+text-decoration:underline;
+color:indigo;
+}
+
+
+.below_cont_title_back {
+width:auto;
+background-color:coral;
+}
+
+.below_cont_title {
+width:800px;
+margin:0 auto;
+font-size:32px;
+line-height:2;
+font-weight:bold;
+color:white;
+text-align:left;
+}
+
+.below_content {
+width:800px;
+margin:0 auto;
+font-size:24px;
+line-height:1.5;
+color:white;
+background-color:darkorange;
+text-align:left;
+padding:15px 0 30px;
+}
+
+.page_up {
+text-align:right;
+font-size:medium;
+font-weight:bold;
+margin-top:20px;
+}
+
+
+table#timetable {
+border:solid 3px #ffeeee;
+border-collapse:collapse;
+text-align:center;
+}
+
+#timetable thead th {
+border:solid 2px #ffeeee;
+}
+
+#timetable tbody {
+font-weight:bold;
+}
+
+#timetable tbody tr th {
+border:solid 2px #ffeeee;
+width:315px;
+}
+
+#timetable tbody tr td {
+border:solid 2px #ffeeee;
+width:50px;
+
+}
+
+#timetable_lastcell {
+width:90px;
+}
+
+#pict_director {
+float:left;
+clear:left;
+margin:0 40px 30px 0;
+}
+
+
+#profile {
+clear:left;
+}
+
+#profile dl {
+font-size:20px;
+margin:25px 0 25px 0px;
+}
+
+#profile dt {
+float:left;
+clear:left;
+margin-bottom:10px;
+}
+
+#profile dd {
+margin-left:160px;
+margin-bottom:10px;
+}
+
+#recruit_box {
+font-size:16px;
+}
+
+#recruit_job dl {
+font-size:16px;
+margin:25px 0 25px 0px;
+}
+
+#recruit_job dt {
+margin-bottom:10px;
+}
+
+#recruit_job dd {
+margin:5px 0 15px 120px;
+}
+
+#recruit_shift dl{
+font-size:16px;
+}
+
+#recruit_shift dt {
+float:left;
+clear:left;
+}
+
+#recruit_shift dd {
+margin-left:120px;
+}
